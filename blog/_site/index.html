@@ -10,48 +10,8 @@ title: {{ site.name }}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div> -->
 
-
-
----
-layout: default
-title: {{ site.name }}
----
-
-<h1 id='Name'>
-	Sedrick Keh
-</h1>
-
-<div class="info fancy">
-	<i>
-		BSc Data Science and Technology, HKUST.<br>
-		sedrickkeh@gmail.com
-	</i>
-</div>
-
-<hr>
-
-<div class="blurb">
-
-  I'm currently studying data science at HKUST.
-  Here you can find some blog posts and project descriptions.
-
-</div>
-
-
-
-<style type="text/css">
-	#Name {
-		margin-bottom: 2%;
-	}
-	.info {
-		padding-bottom: 1%;
-	}
-	.blurb {
-		padding-top: 1%;
-	}
-</style> -->
 
 <!DOCTYPE html>
 <html>
@@ -102,10 +62,10 @@ title: {{ site.name }}
 <div id="navbar">
 <nav>
 	<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/projects">Projects</a></li>
-	<li><a href="/blog">Blog</a></li>
-	<li><a href="https://github.com/sedrickkeh"><img src="/img/github-mark/GitHub-Mark-32px.png" /></a></li>
+		<li><a href="/">Projects</a></li>
+    <li><a href="/about">About</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="https://github.com/sedrickkeh"><img src="/img/github-mark/GitHub-Mark-32px.png" /></a></li>
 	</ul>
 </nav>
 </div>
@@ -113,6 +73,83 @@ title: {{ site.name }}
 
 <hr>
 
-</div> <!-- container -->
+			
+<div id="content">
+<style type="text/css">
+	
+	#content #headtable{
+		width: 100%;
+	}
+	
+	.seasontable {
+		width: 100%;
+	}
+
+	.descriptioncell {
+		padding-left: 5px;
+	}
+	.descriptioncell:hover {
+		cursor: default;
+	}
+	
+	.typecell {
+		text-align: center;
+		text-transform: uppercase;
+		border: 1px solid;
+		border-radius: 5px;
+		padding: 3px 5px;
+		width: 3em;
+	}
+
+	.code {background-color: #F9FBE7;}
+	.blog {background-color: #C8E6C9;}
+	.app {background-color: #F9FBE7;}
+	.data {background-color: #F9FBE7;}
+	.pdf {background-color: #E0F2F1;}
+
+	.internalurl a {
+		font-size: 0.5em;
+		float: right;
+		padding-left: 3px;
+		color: #B0BEC5;
+	}
+
+</style>
+
+
+<table id="headtable">
+	<tr>
+	<td><h1>All posts</h1></td>
+	</tr>
+</table>
+
+
+<div class="posts">
+    
+	<h2>2019</h2>
+
+	<table class="seasontable">
+
+	<!-- iterate over rows -->
+	<tr>	
+	  <!-- indicator -->
+    <td class='typecell app'>
+      <a href="https://google.com/">app</a>
+    </td>
+
+    <!-- description -->
+    <td class="descriptioncell">
+      Sample post.
+    </td>
+  </tr>
+  <!-- item loop -->
+     
+  </table>
+</div> <!-- posts -->
+</div> <!-- content -->
+
+<hr style="margin-top: 1em">
+
+</div> <!-- /.container -->
 </body>
 </html>

@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        sedrickkeh.github.io
+tagline:      Projects, thoughts, and other random stuff.
 baseurl:      ""
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Sedrick Keh
+  url:        https://github.com/sedrickkeh/sedrickkeh.github.io 
 
 # Gems
 gems:

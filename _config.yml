@@ -14,5 +14,11 @@ author:
 gems:
   - jekyll-paginate
 
-#Others
+# Others
 markdown: kramdown
+
+# Collections:
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title

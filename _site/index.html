@@ -1,31 +1,68 @@
-<!-- ---
-layout: default
-title: {{ site.name }}
----
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- header -->
+<head>				
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <!-- Variables -->
+  <title> Sedrick Keh </title>
+  <meta name="description" content="Projects, thoughts, and other random stuff.">
+  <meta name="keywords" content="blog">
+  
+  <!-- metas -->
+  <meta name="author" content="Sedrick Keh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/img/favicon/source-code-icon-152-213242.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/source-code-icon-152-213242.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/source-code-icon-144-213242.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/source-code-icon-120-213242.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/source-code-icon-114-213242.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/source-code-icon-72-213242.png">
+  <link rel="apple-touch-icon-precomposed" href="/img/favicon/source-code-icon-57-213242.png">
+  <link rel="icon" href="/img/favicon/source-code-icon-32-213242.png" sizes="32x32">
+  
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  
+  
+  <!-- feed -->
+  <link type="application/atom+xml" rel="alternate" href="https://nolanbconaway.github.io/feed.xml" title="Nolan Conaway" />
+  
+</head>
+
+<body>		
+  <div id="container">	
+  <div id="topper">
+<div id="navbar">
+    <nav>
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://github.com/sedrickkeh"><img src="/img/github-mark/GitHub-Mark-32px.png" /></a></li>
+        </ul>
+    </nav>
 </div>
-
-
-
----
-layout: default
-title: {{ site.name }}
----
-
-<h1 id='Name'>
+</div>
+<hr>
+  
+  <h1 id='Name'>
 	Sedrick Keh
 </h1>
 
 <div class="info fancy">
 	<i>
-		BSc Data Science and Technology, HKUST.<br>
+		BSc Data Science and Technology, HKUST <br>
 		sedrickkeh@gmail.com
 	</i>
 </div>
@@ -34,11 +71,13 @@ title: {{ site.name }}
 
 <div class="blurb">
 
-  I'm currently studying data science at HKUST.
-  Here you can find some blog posts and project descriptions.
+  I'm a data science student at HKUST. 
+  I'm currently in Knoxville doing some research on parallel computing, deep learning, and computational microscopy.
+  Here you can find some of my blog posts and descriptions of projects I've worked on.
+  <br> 
+  <h3> Recent posts and projects: </h3>
 
 </div>
-
 
 
 <style type="text/css">
@@ -51,68 +90,10 @@ title: {{ site.name }}
 	.blurb {
 		padding-top: 1%;
 	}
-</style> -->
-
-<!DOCTYPE html>
-<html>
-<!-- header -->
-<head>				
-
-<!-- Variables -->
-<title> Sedrick Keh </title>
-<meta name="description" content="Projects, thoughts, and other random stuff.">
-<meta name="keywords" content="blog">
-
-<!-- metas -->
-<meta name="author" content="Sedrick Keh">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-
-<!-- favicon -->
-<link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="/img/favicon/source-code-icon-152-213242.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/source-code-icon-152-213242.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/source-code-icon-144-213242.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/source-code-icon-120-213242.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/source-code-icon-114-213242.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/source-code-icon-72-213242.png">
-<link rel="apple-touch-icon-precomposed" href="/img/favicon/source-code-icon-57-213242.png">
-<link rel="icon" href="/img/favicon/source-code-icon-32-213242.png" sizes="32x32">
-
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-
-<!-- Styling -->
-<link rel="stylesheet" type="text/css" href="/css/syntax.css">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+</style>
 
 
-<!-- feed -->
-<link type="application/atom+xml" rel="alternate" href="https://nolanbconaway.github.io/feed.xml" title="Nolan Conaway" />
-
-</head>
-
-
-<!-- main body -->
-<body>		
-<div id="container">	
-<div id="topper">
-<div id="navbar">
-<nav>
-	<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/projects">Projects</a></li>
-	<li><a href="/blog">Blog</a></li>
-	<li><a href="https://github.com/sedrickkeh"><img src="/img/github-mark/GitHub-Mark-32px.png" /></a></li>
-	</ul>
-</nav>
-</div>
-</div>
-
-<hr>
-
-</div> <!-- container -->
+  </div> 
 </body>
+
 </html>

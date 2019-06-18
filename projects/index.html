@@ -4,9 +4,17 @@ title: {{ site.name }}
 ---
 <div id="home">
   <h1>Projects</h1>
-  <ul class="posts">
+  <table id="tbProjects" width="100%">
     {% for project in site.projects reversed %}
-      <li><span>{{ project.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
+      <tr>
+        <td width="306" align="center">
+        <img src="projects/translation.gif" width="200px" style="box-shadow: 4px 4px 8px #888" >
+        </td>
+        <td> <span>{{ project.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+        <p></p>
+        <em> {{ project.description }} </em>
+        </td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
 </div>

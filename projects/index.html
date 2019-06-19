@@ -4,11 +4,11 @@ title: {{ site.name }}
 ---
 <div id="home">
   <h1>Projects</h1>
-  <table id="tbProjects" width="100%">
+  <table id="tbProjects">
     {% for project in site.projects reversed %}
       <tr>
-        <td width="306" align="center">
-        <img src="projects/translation.gif" width="200px" style="box-shadow: 4px 4px 8px #888" >
+        <td width="60%" align="center">
+        <img src="projects/translation.gif" width="60%">
         </td>
         <td> <span>{{ project.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
         <p></p>

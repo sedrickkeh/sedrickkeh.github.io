@@ -3,6 +3,21 @@
 
   <title>Sedrick Keh</title>
   
+  <script type="text/javascript">
+    let activeBlock = null
+    function toggleblock(selector) {
+      if (activeBlock) {
+        document.getElementById(activeBlock).style.display = 'none'
+      }
+      document.getElementById(selector).style.display = selector === activeBlock ? 'none' : 'block'
+      if (activeBlock === selector) {
+        activeBlock = null
+      } else {
+        activeBlock = selector
+      }
+    }
+  </script>
+
   <meta name="author" content="Sedrick Keh">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -74,22 +89,82 @@
             <ul>
               <li>
                 <a href="">PINEAPPLE: Personifying INanimate Entities by Acquiring Parallel Personification Data for Learning Enhanced Generation</a><br>
-                <b>Sedrick Scott Keh</b>, Steven Y. Feng*, Varun Gangal*, Malihe Alikhani, Eduard Hovy<br>
-                Accepted to <b>International Conference on Computational Linguistics (COLING) 2022</b>
+                <b>Sedrick Scott Keh</b>, Kevin Lu, Steven Y. Feng*, Varun Gangal*, Harsh Jhamtani, Malihe Alikhani, Eduard Hovy<br>
+                Accepted to <b>International Conference on Computational Linguistics (COLING) 2022</b><br>
+                <a href="">pdf</a> |
+                <a href="javascript:toggleblock('pineapple-abstract')">abstract</a> |
+                <a shape="rect" href="javascript:toggleblock('pineapple-bibtex')" class="togglebib">bibtex</a> |
+                <a href="https://github.com/sedrickkeh/PINEAPPLE">github</a>
+                <p align="justify"> <i id="pineapple-abstract" class="hidden">A personification is a figure of speech that endows inanimate entities 
+                  with properties and actions typically seen as requiring animacy. In this paper, we explore the task of personification generation. 
+                  To this end, we propose PINEAPPLE: Personifying INanimate Entities by Acquiring Parallel Personification data for Learning Enhanced 
+                  generation. We curate a corpus of personifications called PersonifCorp, together with automatically generated de-personified 
+                  literalizations of these personifications. We demonstrate the usefulness of this parallel corpus by training a seq2seq model to 
+                  personify a given literal input. Both automatic and human evaluations show that fine-tuning with PersonifCorp leads to significant 
+                  gains in personification-related qualities such as animacy and interestingness. A detailed qualitative analysis also highlights key 
+                  strengths and imperfections of PINEAPPLE over baselines, demonstrating a strong ability to generate diverse and creative 
+                  personifications that enhance the overall appeal of a sentence.</i></p>
+                  <p id="pineapple-bibtex" class="hidden">
+                    @inproceedings{keh-etal-2022-pineapple,<br>
+                      &nbsp;&nbsp;author={Keh, Sedrick Scott and Lu, Kevin and Gangal, Varun and Feng, Steven Y. 
+                        and Jhamtani, Harsh and Alikhani, Malihe and Hovy, Eduard},<br>
+                      &nbsp;&nbsp;booktitle={Proceedings of the 29th International Conference on Computational Linguistics},<br>
+                      &nbsp;&nbsp;month={oct},<br>
+                      &nbsp;&nbsp;year={2022}<br>
+                    }
+                  </p>                
+                  </div>
+                </p>
               </li>
               <br>
               <li>
                 <a href="https://arxiv.org/abs/2209.06275">PANCETTA: Phoneme Aware Neural Completion to Elicit Tongue Twisters Automatically</a><br>
                 <b>Sedrick Scott Keh</b>, Steven Y. Feng*, Varun Gangal*, Malihe Alikhani, Eduard Hovy<br>
-                arXiv 2022</b>
+                arXiv 2022</b><br>
+                <a href="https://arxiv.org/pdf/2209.06275.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('pancetta-abstract')">abstract</a> |
+                <a href="javascript:toggleblock('pancetta-bibtex')">bibtex</a> |
+                <a href="https://github.com/sedrickkeh/PANCETTA">github</a>
+                <p align="justify"> <i id="pancetta-abstract" class="hidden">Tongue twisters are meaningful sentences that are difficult to 
+                  pronounce. The process of automatically generating tongue twisters is challenging since the generated utterance must satisfy 
+                  two conditions at once: phonetic difficulty and semantic meaning. Furthermore, phonetic difficulty is itself hard to characterize 
+                  and is expressed in natural tongue twisters through a heterogeneous mix of phenomena such as alliteration and homophony. 
+                  In this paper, we propose PANCETTA: Phoneme Aware Neural Completion to Elicit Tongue Twisters Automatically. We leverage 
+                  phoneme representations to capture the notion of phonetic difficulty, and we train language models to generate original tongue 
+                  twisters on two proposed task settings. To do this, we curate a dataset called PANCETTA, consisting of existing English tongue 
+                  twisters. Through automatic and human evaluation, as well as qualitative analysis, we show that PANCETTA generates novel, 
+                  phonetically difficult, fluent, and semantically meaningful tongue twisters. </i></p>
+                <p id="pancetta-bibtex" class="hidden">
+                  @article{keh2022pancetta,<br>
+                    &nbsp;&nbsp;doi={10.48550/ARXIV.2209.06275},<br>
+                    &nbsp;&nbsp;url={https://arxiv.org/abs/2209.06275},<br>
+                    &nbsp;&nbsp;author={Keh, Sedrick Scott and Feng, Steven Y. and Gangal, Varun and Alikhani, Malihe and Hovy, Eduard},<br>
+                    &nbsp;&nbsp;title={PANCETTA: Phoneme Aware Neural Completion to Elicit Tongue Twisters Automatically},<br>
+                    &nbsp;&nbsp;publisher={arXiv},<br>
+                    &nbsp;&nbsp;year={2022}<br>
+                  }
+                </p>
               </li>
               <br>
               <li>
-                NewsPanda: Media Monitoring for Timely Conservation Action<br>
+                <a href="">NewsPanda: Media Monitoring for Timely Conservation Action</a><br>
                 <b>Sedrick Scott Keh*</b>, Zheyuan Ryan Shi*, David J. Patterson, Nirmal Bhagabati, Karun Dewan, Areendran Gopala, Pablo Izquierdo, Debojyoti Mallick, Ambika Sharma, Pooja Shrestha, Fei Fang<br>
-                Under review at IAAI 2023
+                Under review at IAAI 2023<br>
+                <a href="">pdf</a> | 
+                <a href="javascript:toggleblock('newspanda-abstract')">abstract</a>
+                <p align="justify"> <i id="newspanda-abstract" class="hidden">Non-governmental organizations for environmental conservation have a 
+                  significant interest in monitoring conservation-related media and getting timely updates about infrastructure construction projects 
+                  as they may cause massive impact to key conservation areas. Such monitoring, however, is difficult and time-consuming. We introduce 
+                  NewsPanda, a toolkit which automatically detects and analyzes online articles related to environmental conservation and 
+                  infrastructure construction. We fine-tune a BERT-based model using active learning methods and noise correction algorithms to 
+                  identify articles that are relevant to conservation and infrastructure construction. For the identified articles, we perform further 
+                  analysis, extracting keywords and finding potentially related sources. NewsPanda has been successfully deployed by the World Wide 
+                  Fund for Nature teams in the UK, India, and Nepal since February 2022. It currently monitors over 80,000 websites and 1,074 conservation 
+                  sites across India and Nepal, saving more than 30 hours of human efforts weekly. We have now scaled it up to cover 60,000 conservation 
+                  sites globally. </i></p>
               </li>
             </ul>
+            <br>
             <h4>2021 and older</h4>
             <ul>
               <li>

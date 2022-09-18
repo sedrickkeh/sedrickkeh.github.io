@@ -5,15 +5,27 @@
   
   <script type="text/javascript">
     let activeBlock = null
-    function toggleblock(selector) {
+    let $hiddenParaBlock = null
+    function toggleblock(selector, descParaSelector) {
+      let $descPara = descParaSelector ? document.getElementById(descParaSelector) : null
       if (activeBlock) {
         document.getElementById(activeBlock).style.display = 'none'
       }
       document.getElementById(selector).style.display = selector === activeBlock ? 'none' : 'block'
       if (activeBlock === selector) {
         activeBlock = null
+        if ($descPara) {
+          $descPara.style.display = 'block'
+        }
       } else {
         activeBlock = selector
+        if ($hiddenParaBlock && $hiddenParaBlock !== $descPara) {
+          $hiddenParaBlock.style.display = 'block'
+        }
+        if ($descPara) {
+          $descPara.style.display = 'none'
+          $hiddenParaBlock = $descPara
+        }
       }
     }
   </script>

@@ -133,3 +133,7 @@ span.highlight {
 .hidden {
   display: none;
 }
+
+.bibtex {
+  font-family: 'Courier New', Courier, monospace;
+}

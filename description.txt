@@ -1,4 +1,0 @@
-            <p>
-              I enjoy crosswords and competitive programming. In my free time, I also like to play chess (decent-ish) and basketball (total noob).
-              I occasionally tweet about sports, memes, and trashy reality TV.
-            </p>

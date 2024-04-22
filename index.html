@@ -2,7 +2,19 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Sedrick Keh</title>
-  
+
+  <style>
+    .collapsible {
+      cursor: pointer;
+      text-align: left;
+      font-size: 14px;
+    }
+    .content {
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+
   <script type="text/javascript">
     let activeBlock = null
     let $hiddenParaBlock = null
@@ -48,7 +60,7 @@
               <p style="text-align:center">
                 <name>Sedrick Keh</name>
               </p>
-              <p>I'm currently an AI Resident at <a href="https://www.tri.global">Toyota Research Institute</a> working on language modeling for embodied systems.
+              <p>I'm currently a research engineer at <a href="https://www.tri.global">Toyota Research Institute</a> working on pretraining and on multimodal models.
                 I completed my MS at the <a href="https://www.ml.cmu.edu/">Machine Learning Department</a> at 
                 <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>, 
                 where I did research on multimodal models and grounding with <a href="https://dpfried.github.io/">Daniel Fried</a>, 
@@ -56,7 +68,7 @@
                 I previously received my Bachelor's degree in Data Science and Mathematics from the <a href="https://hkust.edu.hk/home">Hong Kong University of Science and Technology (HKUST)</a>. 
               </p>
               <p style="text-align:center">
-                <a href="mailto:skeh@cs.cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="mailto:sedrick.keh@tri.global">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
                 <a href="https://scholar.google.com/citations?hl=en&user=IMYgXsYAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/sedrickkeh2">Twitter</a> &nbsp/&nbsp
@@ -75,15 +87,23 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                <li><b>May 2023</b>: Started my yearlong AI Residency program with <a href="https://www.tri.global">TRI</a>!</li>
-                <li><b>Feb. 2023</b>: <a href="https://arxiv.org/abs/2305.01503">NewsPanda</a> was presented at IAAI 2023. Check out our <a href="https://newspanda-wwf-cmu.github.io">website</a>!</li>
-                <li><b>Jan. 2023</b>: Our tongue twisters paper (<a href="https://arxiv.org/abs/2209.06275">PANCETTA</a>) is accepted at EACL 2023!</li>
-                <li><b>Dec. 2022</b>: Attending EMNLP 2022 in Abu Dhabi!</li>
-                <li><b>Oct. 2022</b>: <b>Two papers</b> accepted to the <a href="https://sites.google.com/view/figlang2022/">EMNLP 2022 Figurative Language Processing Workshop</a>!</li>
-                <li><b>Oct. 2022</b>: I am attending COLING virtually! My first conference! &#128588</li>
-                <li><b>Aug. 2022</b>: Starting the Fall'22 semester! I'll be TA-ing <a href="https://rsalakhucmu.github.io/10417-22/">10-417/617 Intermediate Deep Learning</a>.</li>
-                <li><b>Aug. 2022</b>: &#127942 Our team won <b>first place</b> at the <a href="https://codalab.lisn.upsaclay.fr/competitions/5726">2022 EMNLP FigLang Euphemism Detection Shared Task Challenge</a>!</li>
-                <li><b>Aug. 2022</b>: Our <a href="https://aclanthology.org/2022.coling-1.547/">PINEAPPLE Personifications paper</a> was accepted to COLING 2022!</li>
+                <li><b>May 2024</b>: Will be attending ICRA in May (Tokyo, Japan) and NAACL in June (Mexico City, Mexico).</li>
+                <li><b>Dec. 2023</b>: Attending EMNLP 2023 in Singapore. &#x1f1f8;&#x1f1ec; </li>
+                <li><b>Sept. 2023</b>: Joined <a href="https://www.tri.global">TRI</a> full time as a research engineer!</li>
+                <button class="collapsible">Older news >> </button>
+                <div class="content">
+                  <ul>
+                    <li><b>May 2023</b>: Started my yearlong AI Residency program with <a href="https://www.tri.global">TRI</a>!</li>
+                    <li><b>Feb. 2023</b>: <a href="https://arxiv.org/abs/2305.01503">NewsPanda</a> was presented at IAAI 2023. Check out our <a href="https://newspanda-wwf-cmu.github.io">website</a>!</li>
+                    <li><b>Jan. 2023</b>: Our tongue twisters paper (<a href="https://arxiv.org/abs/2209.06275">PANCETTA</a>) is accepted at EACL 2023!</li>
+                    <li><b>Dec. 2022</b>: Attending EMNLP 2022 in Abu Dhabi!</li>
+                    <li><b>Oct. 2022</b>: <b>Two papers</b> accepted to the <a href="https://sites.google.com/view/figlang2022/">EMNLP 2022 Figurative Language Processing Workshop</a>!</li>
+                    <li><b>Oct. 2022</b>: I am attending COLING virtually! My first conference! &#128588</li>
+                    <li><b>Aug. 2022</b>: Starting the Fall'22 semester! I'll be TA-ing <a href="https://rsalakhucmu.github.io/10417-22/">10-417/617 Intermediate Deep Learning</a>.</li>
+                    <li><b>Aug. 2022</b>: &#127942 Our team won <b>first place</b> at the <a href="https://codalab.lisn.upsaclay.fr/competitions/5726">2022 EMNLP FigLang Euphemism Detection Shared Task Challenge</a>!</li>
+                    <li><b>Aug. 2022</b>: Our <a href="https://aclanthology.org/2022.coling-1.547/">PINEAPPLE Personifications paper</a> was accepted to COLING 2022!</li>
+                  </ul>
+                </div>
               </ul>              
             </td>
           </tr>
@@ -95,7 +115,14 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My work focuses on <b>natural language generation</b> and <b>grounding</b>.<br><br>
+                These days I'm very interested in <a href="https://arxiv.org/abs/2403.08540">pretraining</a>, <a href="https://arxiv.org/abs/2402.12366">alignment</a>, and evaluation.
+
+                I'm specifically interested in multimodal models and applications to robotics.
+
+                I have done work on grounding (<a href="https://arxiv.org/abs/2311.08584">NAACL Findings 2024</a>), as well as on controllable text generation and evaluation 
+                (<a href="https://aclanthology.org/2022.coling-1.547/">COLING 2022</a>, <a href="https://arxiv.org/abs/2209.06275">EACL 2023</a>)
+                
+                <!-- My work focuses on <b>natural language generation</b> and <b>grounding</b>.<br><br>
 
                 On the generation side, I'm interested in controllable generation, 
                 developing models that can generate creative text (such as 
@@ -108,7 +135,7 @@
                 asking clarifying questions using various models to perform multimodal reasoning.<br><br>
 
                 I'm very interested in the potential of large language models, 
-                as well as interesting real-world applications of NLP (e.g. <a href="assets/newspanda.pdf">NLP for Social Good</a>).
+                as well as interesting real-world applications of NLP (e.g. <a href="assets/newspanda.pdf">NLP for Social Good</a>). -->
               </p>
             </td>
           </tr>
@@ -118,6 +145,128 @@
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Publications</heading>
+            <h4>2024</h4>
+            <ul>
+              <li>
+                <a href="https://arxiv.org/abs/2402.11818">Where It Really Matters: Few-Shot Environmental Conservation Media Monitoring for Low-Resource Languages</a><br>
+                Sameer Jain, <b>Sedrick Scott Keh</b>, Shova Chhetri, Karun Dewan, Pablo Izquierdo, Johanna Prussmann, Pooja Shrestha, César Suárez, Zheyuan Ryan Shi, Lei Li, Fei Fang<br>
+                The 38th Annual AAAI Conference on Artificial Intelligence <b>(AAAI 2024).</b><br>
+                <a href="https://arxiv.org/pdf/2402.11818.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('newsserow-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="newsserow-abstract" class="hidden">Environmental conservation organizations 
+                  routinely monitor news content on conservation in protected areas to maintain situational awareness of developments 
+                  that can have an environmental impact. Existing automated media monitoring systems require large amounts of data 
+                  labeled by domain experts, which is only feasible at scale for high-resource languages like English. However, such 
+                  tools are most needed in the global south where news of interest is mainly in local low-resource languages, and far 
+                  fewer experts are available to annotate datasets sustainably. In this paper, we propose NewsSerow, a method to 
+                  automatically recognize environmental conservation content in low-resource languages. NewsSerow is a pipeline of 
+                  summarization, in-context few-shot classification, and self-reflection using large language models (LLMs). Using at 
+                  most 10 demonstration example news articles in Nepali, NewsSerow significantly outperforms other few-shot methods 
+                  and achieves comparable performance with models fully fine-tuned using thousands of examples. The World Wide Fund 
+                  for Nature (WWF) has deployed NewsSerow for media monitoring in Nepal, significantly reducing their operational 
+                  burden, and ensuring that AI tools for conservation actually reach the communities that need them the most. NewsSerow 
+                  has also been deployed for countries with other languages like Colombia.
+                </i></p>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2403.08540">Language Models Scale Reliably with Over-training and on Downstream Tasks</a><br>
+                Samir Yitzhak Gadre, Georgios Smyrnis, Vaishaal Shankar, Suchin Gururangan, Mitchell Wortsman, Rulin Shao, Jean Mercat, Alex Fang, Jeffrey Li, <b>Sedrick Keh</b>, Rui Xin, Marianna Nezhurina, Igor Vasiljevic, Jenia Jitsev, Alexandros G Dimakis, Gabriel Ilharco, Shuran Song, Thomas Kollar, Yair Carmon, Achal Dave, Reinhard Heckel, Niklas Muennighoff, Ludwig Schmidt<br>
+                <!-- arXiv<br> -->
+                <a href="https://arxiv.org/pdf/2403.08540.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('overtraining-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="overtraining-abstract" class="hidden">Scaling laws are useful guides for developing 
+                  language models, but there are still gaps between current scaling studies and how language models are ultimately 
+                  trained and evaluated. For instance, scaling is usually studied in the compute-optimal training regime 
+                  (i.e., "Chinchilla optimal" regime); however, in practice, models are often over-trained to reduce inference costs. 
+                  Moreover, scaling laws mostly predict loss on next-token prediction, but ultimately models are compared based on 
+                  downstream task performance. In this paper, we address both shortcomings. To do so, we create a testbed of 104 models 
+                  with 0.011B to 6.9B parameters trained with various numbers of tokens on three data distributions. First, we investigate 
+                  scaling in the over-trained regime. We fit scaling laws that extrapolate in both the number of model parameters and the 
+                  ratio of training tokens to parameters. This enables us to predict the validation loss of a 1.4B parameter, 900B token 
+                  run (i.e., 32x over-trained) and a 6.9B parameter, 138B token run -- each from experiments that take 300x 
+                  less compute. Second, we relate the perplexity of a language model to its downstream task performance via a power law. 
+                  We use this law to predict top-1 error averaged over downstream tasks for the two aforementioned models using experiments 
+                  that take 20x less compute. Our experiments are available at https://github.com/mlfoundations/scaling. </i></p>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2402.12366">A Critical Evaluation of AI Feedback for Aligning Large Language Models</a><br>
+                Archit Sharma, <b>Sedrick Keh</b>, Eric Mitchell, Chelsea Finn, Kushal Arora, Thomas Kollar<br>
+                <!-- arXiv<br> -->
+                <a href="https://arxiv.org/pdf/2402.12366.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('rlaif-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="rlaif-abstract" class="hidden">Reinforcement learning with AI feedback (RLAIF) is a popular 
+                  paradigm for improving the instruction-following abilities of powerful pre-trained language models. RLAIF first performs 
+                  supervised fine-tuning (SFT) using demonstrations from a teacher model and then further fine-tunes the model with 
+                  reinforcement learning (RL), using feedback from a critic model. While recent popular open-source models have 
+                  demonstrated substantial improvements in performance from the RL step, in this paper we question whether the complexity 
+                  of this RL step is truly warranted for AI feedback. We show that the improvements of the RL step are virtually entirely 
+                  due to the widespread practice of using a weaker teacher model (e.g. GPT-3.5) for SFT data collection than the critic 
+                  (e.g., GPT-4) used for AI feedback generation. Specifically, we show that simple supervised fine-tuning with GPT-4 as 
+                  the teacher outperforms existing RLAIF pipelines. More generally, we find that the gains from RLAIF vary substantially 
+                  across base model families, test-time evaluation protocols, and critic models. Finally, we provide a mechanistic 
+                  explanation for when SFT may outperform the full two-step RLAIF pipeline as well as suggestions for making RLAIF 
+                  maximally useful in practice.
+                </i></p>
+              </li>
+            </ul>
+            <h4>2023</h4>
+            <ul>
+              <li>
+                <a href="https://arxiv.org/abs/2311.08584">Asking More Informative Questions for Grounded Retrieval</a><br>
+                <b>Sedrick Keh</b>, Justin T Chiu, Daniel Fried<br>
+                Findings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics <b>(NAACL Findings 2024).</b><br>
+                <a href="https://arxiv.org/pdf/2311.08584.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('informativequestions-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="informativequestions-abstract" class="hidden">When a model is trying to gather information in an interactive setting, 
+                  it benefits from asking informative questions. However, in the case of a grounded multi-turn image identification task, previous 
+                  studies have been constrained to polar yes/no questions, limiting how much information the model can gain in a single turn. 
+                  We present an approach that formulates more informative, open-ended questions. In doing so, we discover that off-the-shelf 
+                  visual question answering (VQA) models often make presupposition errors, which standard information gain question selection 
+                  methods fail to account for. To address this issue, we propose a method that can incorporate presupposition handling into both 
+                  question selection and belief updates. Specifically, we use a two-stage process, where the model first filters out images which 
+                  are irrelevant to a given question, then updates its beliefs about which image the user intends. Through self-play and human 
+                  evaluations, we show that our method is successful in asking informative open-ended questions, increasing accuracy over the past 
+                  state-of-the-art by 14%, while resulting in 48% more efficient games in human evaluations. </i></p>
+              </li>
+              <li>
+                <a href="https://aclanthology.org/2023.emnlp-main.809/">Doolittle: Benchmarks and Corpora for Academic Writing Formalization</a><br>
+                Shizhe Diao, Yongyu Lei, Liangming Pan, Tianqing Fang, Wangchunshu Zhou, <b>Sedrick Keh</b>, Min-Yen Kan, Tong Zhang<br>
+                The 2023 Conference on Empirical Methods in Natural Language Processing <b>(EMNLP 2023).</b><br>
+                <a href="https://aclanthology.org/2023.emnlp-main.809.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('doolittle-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="doolittle-abstract" class="hidden">Improving the quality of academic writing is a meaningful but 
+                  challenging task. Conventional methods of language refinement focus on narrow, specific linguistic features within isolated 
+                  sentences, such as grammatical errors and improper word use. We propose a more general task, Academic Writing Formalization (AWF), 
+                  to improve the overall quality of formal academic writing at the paragraph level. We formulate this language refinement task as a 
+                  formal text style transfer task which transfers informal-academic text to formal-academic and contribute a large-scale non-parallel 
+                  dataset, Doolittle, for this purpose. Concurrently, we apply a method named metric-oriented reinforcement learning (MORL) to two 
+                  large language models (LLM) where we incorporate different levels of automatic feedback into the training process. Our experiments 
+                  reveal that existing text transfer models and grammatical error correction models address certain aspects of AWF but still have a 
+                  significant performance gap compared to human performance. Meanwhile, language models fine-tuned with our MORL method exhibit 
+                  considerably improved performance, rivaling the latest chatbot ChatGPT, but still have a non-negligible gap compared to the ground 
+                  truth formal-academic texts in Doolittle.
+                </i></p>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2302.10143">Hashtag-Guided Low-Resource Tweet Classification</a><br>
+                Shizhe Diao*, <b>Sedrick Scott Keh*</b>, Liangming Pan, Zhiliang Tian, Yan Song, Tong Zhang<br>
+                Proceedings of the ACM Web Conference 2023 <b>(WWW 2023).</b><br>
+                <a href="https://arxiv.org/pdf/2302.10143.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('hashtag-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="hashtag-abstract" class="hidden">Social media classification tasks (e.g., tweet sentiment analysis, 
+                  tweet stance detection) are challenging because social media posts are typically short, informal, and ambiguous. Thus, training 
+                  on tweets is challenging and demands large-scale human-annotated labels, which are time-consuming and costly to obtain. In this paper,
+                   we find that providing hashtags to social media tweets can help alleviate this issue because hashtags can enrich short and ambiguous 
+                   tweets in terms of various information, such as topic, sentiment, and stance. This motivates us to propose a novel Hashtag-guided 
+                   Tweet Classification model (HashTation), which automatically generates meaningful hashtags for the input tweet to provide useful 
+                   auxiliary signals for tweet classification. To generate high-quality and insightful hashtags, our hashtag generation model retrieves 
+                   and encodes the post-level and entity-level information across the whole corpus. Experiments show that HashTation achieves significant 
+                   improvements on seven low-resource tweet classification tasks, in which only a limited amount of training data is provided, showing that 
+                   automatically enriching tweets with model-generated hashtags could significantly reduce the demand for large-scale human-labeled data. 
+                   Further analysis demonstrates that HashTation is able to generate high-quality hashtags that are consistent with the tweets and their 
+                   labels. The code is available at https://github.com/shizhediao/HashTation. </i></p>
+              </li>
+            </ul>
             <h4>2022</h4>
             <ul>
               <li>
@@ -126,7 +275,6 @@
                 The 17th Conference of the European Chapter of the Association for Computational Linguistics <b>(EACL 2023).</b><br>
                 <a href="https://arxiv.org/pdf/2209.06275.pdf">pdf</a> | 
                 <a href="javascript:toggleblock('pancetta-abstract')" target="_self">abstract</a> |
-                <a href="javascript:toggleblock('pancetta-bibtex')" target="_self">bibtex</a> |
                 <a href="https://github.com/sedrickkeh/PANCETTA">github</a>
                 <p align="justify"> <i id="pancetta-abstract" class="hidden">Tongue twisters are meaningful sentences that are difficult to 
                   pronounce. The process of automatically generating tongue twisters is challenging since the generated utterance must satisfy 
@@ -137,16 +285,6 @@
                   twisters on two proposed task settings. To do this, we curate a dataset called PANCETTA, consisting of existing English tongue 
                   twisters. Through automatic and human evaluation, as well as qualitative analysis, we show that PANCETTA generates novel, 
                   phonetically difficult, fluent, and semantically meaningful tongue twisters. </i></p>
-                <p id="pancetta-bibtex" class="hidden bibtex">
-                  @article{keh2022pancetta,<br>
-                    &nbsp;&nbsp;doi={10.48550/ARXIV.2209.06275},<br>
-                    &nbsp;&nbsp;url={https://arxiv.org/abs/2209.06275},<br>
-                    &nbsp;&nbsp;author={Keh, Sedrick Scott and Feng, Steven Y. and Gangal, Varun and Alikhani, Malihe and Hovy, Eduard},<br>
-                    &nbsp;&nbsp;title={PANCETTA: Phoneme Aware Neural Completion to Elicit Tongue Twisters Automatically},<br>
-                    &nbsp;&nbsp;publisher={arXiv},<br>
-                    &nbsp;&nbsp;year={2022}<br>
-                  }
-                </p>
               </li>
               <br>
               <li>
@@ -189,7 +327,6 @@
                 <i>Proceedings of the 29th International Conference on Computational Linguistics <b>(COLING 2022)</b></i><br>
                 <a href="https://aclanthology.org/2022.coling-1.547.pdf">pdf</a> |
                 <a href="javascript:toggleblock('pineapple-abstract')" target="_self">abstract</a> |
-                <a href="javascript:toggleblock('pineapple-bibtex')" target="_self">bibtex</a> |
                 <a href="https://github.com/sedrickkeh/PINEAPPLE">github</a> |
                 <a href="https://www.youtube.com/watch?v=MH1I2EVaZxk">talk</a> |
                 <a href="assets/pineapple-slides.pdf">slides</a> |
@@ -202,16 +339,7 @@
                   personify a given literal input. Both automatic and human evaluations show that fine-tuning with PersonifCorp leads to significant 
                   gains in personification-related qualities such as animacy and interestingness. A detailed qualitative analysis also highlights key 
                   strengths and imperfections of PINEAPPLE over baselines, demonstrating a strong ability to generate diverse and creative 
-                  personifications that enhance the overall appeal of a sentence.</i></p>
-                <p id="pineapple-bibtex" class="hidden bibtex">
-                  @inproceedings{keh-etal-2022-pineapple,<br>
-                    &nbsp;&nbsp;author={Keh, Sedrick Scott and Lu, Kevin and Gangal, Varun and Feng, Steven Y. 
-                      and Jhamtani, Harsh and Alikhani, Malihe and Hovy, Eduard},<br>
-                    &nbsp;&nbsp;booktitle={Proceedings of the 29th International Conference on Computational Linguistics},<br>
-                    &nbsp;&nbsp;month={oct},<br>
-                    &nbsp;&nbsp;year={2022}<br>
-                  }
-                </p>                
+                  personifications that enhance the overall appeal of a sentence.</i></p>              
                 </p>
               </li>
               <br>
@@ -221,7 +349,6 @@
                 <i>The 35th Annual Conference on Innovative Applications of Artificial Intelligence <b>(IAAI 2023)</b></i><br>
                 <a href="https://arxiv.org/pdf/2305.01503.pdf">pdf</a> | 
                 <a href="javascript:toggleblock('newspanda-abstract')" target="_self">abstract</a> |
-                <a href="javascript:toggleblock('newspanda-bibtex')" target="_self">bibtex</a> |
                 <a href="https://github.com/NewsPanda-WWF-CMU/weekly-pipeline">github</a> |
                 <a href="https://newspanda-wwf-cmu.github.io">website</a>
                 <p align="justify"> <i id="newspanda-abstract" class="hidden">Non-governmental organizations for environmental conservation have a 
@@ -233,17 +360,7 @@
                   analysis, extracting keywords and finding potentially related sources. NewsPanda has been successfully deployed by the World Wide 
                   Fund for Nature teams in the UK, India, and Nepal since February 2022. It currently monitors over 80,000 websites and 1,074 conservation 
                   sites across India and Nepal, saving more than 30 hours of human efforts weekly. We have now scaled it up to cover 60,000 conservation 
-                  sites globally. </i></p>
-                <p id="newspanda-bibtex" class="hidden bibtex">
-                  @inproceedings{newspanda,<br>
-                    &nbsp;&nbsp;title={NewsPanda: Media Monitoring for Timely Conservation Action},<br>
-                    &nbsp;&nbsp;author={Sedrick Scott Keh* and Zheyuan Ryan Shi* and David J. Patterson and Nirmal Bhagabati and 
-                      Karun Dewan and Areendran Gopala and Pablo Izquierdo and Debojyoti Mallick and Ambika Sharma and
-                      Pooja Shrestha and Fei Fang},<br>
-                    &nbsp;&nbsp;booktitle={Conference on Innovative Applications of Artificial Intelligence (IAAI)},<br>
-                    &nbsp;&nbsp;year={2023}
-                }
-                </p>    
+                  sites globally. </i></p>  
               </li>
             </ul>
             <br>
@@ -254,29 +371,13 @@
                 <b>Sedrick Scott Keh</b><br>
                 arXiv 2020<br>
                 <a href="https://arxiv.org/pdf/2012.00332.pdf">pdf</a> | 
-                <a href="javascript:toggleblock('plant-abstract')" target="_self">abstract</a> |
-                <a href="javascript:toggleblock('plant-bibtex')" target="_self">bibtex</a>
+                <a href="javascript:toggleblock('plant-abstract')" target="_self">abstract</a>
                 <p align="justify"> <i id="plant-abstract" class="hidden"> In recent years, deep learning has vastly improved the identification and 
                   diagnosis of various diseases in plants. In this report, we investigate the problem of pathology classification using images of a single 
                   leaf. We explore the use of standard benchmark models such as VGG16, ResNet101, and DenseNet 161 to achieve a 0.945 score on the task. 
                   Furthermore, we explore the use of the newer EfficientNet model, improving the accuracy to 0.962. Finally, we introduce the state-of-the-art 
                   idea of semi-supervised Noisy Student training to the EfficientNet, resulting in significant improvements in both accuracy and convergence 
                   rate. The final ensembled Noisy Student model performs very well on the task, achieving a test score of 0.982.</i></p>
-                <p id="plant-bibtex" class="hidden bibtex">
-                  @article{keh2020semi,<br>
-                    &nbsp;&nbsp;author={Sedrick Scott Keh},<br>
-                    &nbsp;&nbsp;title={Semi-Supervised Noisy Student Pre-training on EfficientNet Architectures for Plant Pathology Classification},<br>
-                    &nbsp;&nbsp;journal={CoRR},<br>
-                    &nbsp;&nbsp;volume={abs/2012.00332},<br>
-                    &nbsp;&nbsp;year={2020},<br>
-                    &nbsp;&nbsp;url={https://arxiv.org/abs/2012.00332},<br>
-                    &nbsp;&nbsp;eprinttype={arXiv},<br>
-                    &nbsp;&nbsp;eprint={2012.00332},<br>
-                    &nbsp;&nbsp;timestamp={Fri, 04 Dec 2020 12:07:23 +0100},<br>
-                    &nbsp;&nbsp;biburl={https://dblp.org/rec/journals/corr/abs-2012-00332.bib},<br>
-                    &nbsp;&nbsp;bibsource={dblp computer science bibliography, https://dblp.org}<br>
-                  }
-                </p>
               </li>
               <br>
               <li>
@@ -284,28 +385,12 @@
                 <b>Sedrick Scott Keh</b>, I-Tsun Cheng<br>
                 arXiv 2019<br>
                 <a href="http://arxiv.org/pdf/1907.06333.pdf">pdf</a> | 
-                <a href="javascript:toggleblock('mbti-abstract')" target="_self">abstract</a> |
-                <a href="javascript:toggleblock('mbti-bibtex')" target="_self">bibtex</a>
+                <a href="javascript:toggleblock('mbti-abstract')" target="_self">abstract</a>
                 <p align="justify"> <i id="mbti-abstract" class="hidden">The Myers-Briggs Type Indicator (MBTI) is a popular personality metric that uses 
                   four dichotomies as indicators of personality traits. This paper examines the use of pre-trained language models to predict MBTI personality 
                   types based on scraped labeled texts. The proposed model reaches an accuracy of 0.47 for correctly predicting all 4 types and 0.86 for correctly 
                   predicting at least 2 types. Furthermore, we investigate the possible uses of a fine-tuned BERT model for personality-specific language generation. 
                   This is a task essential for both modern psychology and for intelligent empathetic systems.</i></p>
-                <p id="mbti-bibtex" class="hidden bibtex">
-                  @article{keh2019myers,<br>
-                    &nbsp;&nbsp;author={Sedrick Scott Keh and I{-}Tsun Cheng},<br>
-                    &nbsp;&nbsp;title={Myers-Briggs Personality Classification and Personality-Specific Language Generation Using Pre-trained Language Models},<br>
-                    &nbsp;&nbsp;journal={CoRR},<br>
-                    &nbsp;&nbsp;volume={abs/1907.06333},<br>
-                    &nbsp;&nbsp;year={2019},<br>
-                    &nbsp;&nbsp;url={http://arxiv.org/abs/1907.06333},<br>
-                    &nbsp;&nbsp;eprinttype={arXiv},<br>
-                    &nbsp;&nbsp;eprint={1907.06333},<br>
-                    &nbsp;&nbsp;timestampSat, 23 Jan 2021 01:11:28 +0100},<br>
-                    &nbsp;&nbsp;biburl={https://dblp.org/rec/journals/corr/abs-1907-06333.bib},<br>
-                    &nbsp;&nbsp;bibsource={dblp computer science bibliography, https://dblp.org}<br>
-                  }
-                </p>
               </li>
               <br>
               <!-- <li>
@@ -408,5 +493,21 @@
     </tr>
   </table>
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
 
 </html>

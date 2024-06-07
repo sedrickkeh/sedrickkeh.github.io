@@ -87,7 +87,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
+                <li><b>May 2024</b>: Check out our paper <a href="https://arxiv.org/abs/2405.06640">Linearizing Large Language Models</a>.</li>
                 <li><b>May 2024</b>: Will be attending ICRA in May (Yokohama, Japan) and NAACL in June (Mexico City, Mexico).</li>
+                <li><b>Apr. 2024</b>: Check out our release of <b><a href="https://huggingface.co/TRI-ML/mamba-7b-rw">Mamba-7B</a></b>!</li>
                 <li><b>Dec. 2023</b>: Attending EMNLP 2023 in Singapore. &#x1f1f8;&#x1f1ec; </li>
                 <li><b>Sept. 2023</b>: Joined <a href="https://www.tri.global">TRI</a> full time as a research engineer!</li>
                 <button class="collapsible">Older news >> </button>
@@ -120,7 +122,7 @@
                 I'm specifically interested in multimodal models and applications to robotics.
 
                 I have done work on grounding (<a href="https://arxiv.org/abs/2311.08584">NAACL Findings 2024</a>), as well as on controllable text generation and evaluation 
-                (<a href="https://aclanthology.org/2022.coling-1.547/">COLING 2022</a>, <a href="https://arxiv.org/abs/2209.06275">EACL 2023</a>)
+                (<a href="https://aclanthology.org/2022.coling-1.547/">COLING 2022</a>, <a href="https://arxiv.org/abs/2209.06275">EACL 2023</a>).
                 
                 <!-- My work focuses on <b>natural language generation</b> and <b>grounding</b>.<br><br>
 
@@ -148,25 +150,24 @@
             <h4>2024</h4>
             <ul>
               <li>
-                <a href="https://arxiv.org/abs/2402.11818">Where It Really Matters: Few-Shot Environmental Conservation Media Monitoring for Low-Resource Languages</a><br>
-                Sameer Jain, <b>Sedrick Scott Keh</b>, Shova Chhetri, Karun Dewan, Pablo Izquierdo, Johanna Prussmann, Pooja Shrestha, César Suárez, Zheyuan Ryan Shi, Lei Li, Fei Fang<br>
-                The 38th Annual AAAI Conference on Artificial Intelligence <b>(AAAI 2024).</b><br>
-                <a href="https://arxiv.org/pdf/2402.11818.pdf">pdf</a> | 
-                <a href="javascript:toggleblock('newsserow-abstract')" target="_self">abstract</a>
-                <p align="justify"> <i id="newsserow-abstract" class="hidden">Environmental conservation organizations 
-                  routinely monitor news content on conservation in protected areas to maintain situational awareness of developments 
-                  that can have an environmental impact. Existing automated media monitoring systems require large amounts of data 
-                  labeled by domain experts, which is only feasible at scale for high-resource languages like English. However, such 
-                  tools are most needed in the global south where news of interest is mainly in local low-resource languages, and far 
-                  fewer experts are available to annotate datasets sustainably. In this paper, we propose NewsSerow, a method to 
-                  automatically recognize environmental conservation content in low-resource languages. NewsSerow is a pipeline of 
-                  summarization, in-context few-shot classification, and self-reflection using large language models (LLMs). Using at 
-                  most 10 demonstration example news articles in Nepali, NewsSerow significantly outperforms other few-shot methods 
-                  and achieves comparable performance with models fully fine-tuned using thousands of examples. The World Wide Fund 
-                  for Nature (WWF) has deployed NewsSerow for media monitoring in Nepal, significantly reducing their operational 
-                  burden, and ensuring that AI tools for conservation actually reach the communities that need them the most. NewsSerow 
-                  has also been deployed for countries with other languages like Colombia.
-                </i></p>
+                <a href="https://arxiv.org/abs/2405.06640">Linearizing Large Language Models</a><br>
+                Jean Mercat*, Igor Vasiljevic*, <b>Sedrick Keh</b>*, Kushal Arora, Achal Dave, Adrien Gaidon, Thomas Kollar<br>
+                <!-- arXiv<br> -->
+                <a href="https://arxiv.org/pdf/2405.06640.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('linear-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="linear-abstract" class="hidden">Linear transformers have emerged as a subquadratic-time 
+                  alternative to softmax attention and have garnered significant interest due to their fixed-size recurrent state 
+                  that lowers inference cost. However, their original formulation suffers from poor scaling and underperforms 
+                  compute-matched transformers. Recent linear models such as RWKV and Mamba have attempted to address these 
+                  shortcomings by proposing novel time-mixing and gating architectures, but pre-training large language models 
+                  requires significant data and compute investments. Thus, the search for subquadratic architectures is limited by 
+                  the availability of compute and quality pre-training datasets. As a cost-effective alternative to pre-training 
+                  linear transformers, we propose Scalable UPtraining for Recurrent Attention (SUPRA). We present a method to 
+                  uptrain existing large pre-trained transformers into Recurrent Neural Networks (RNNs) with a modest compute budget. 
+                  This allows us to leverage the strong pre-training data and performance of existing transformer LLMs, while requiring 
+                  5% of the training cost. We find that our linearization technique leads to competitive performance on standard 
+                  benchmarks, but we identify persistent in-context learning and long-context modeling shortfalls for even the largest 
+                  linear models. Our code and models can be found at https://github.com/TRI-ML/linear_open_lm. </i></p>
               </li>
               <li>
                 <a href="https://arxiv.org/abs/2403.08540">Language Models Scale Reliably with Over-training and on Downstream Tasks</a><br>
@@ -206,6 +207,27 @@
                   across base model families, test-time evaluation protocols, and critic models. Finally, we provide a mechanistic 
                   explanation for when SFT may outperform the full two-step RLAIF pipeline as well as suggestions for making RLAIF 
                   maximally useful in practice.
+                </i></p>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2402.11818">Where It Really Matters: Few-Shot Environmental Conservation Media Monitoring for Low-Resource Languages</a><br>
+                Sameer Jain, <b>Sedrick Scott Keh</b>, Shova Chhetri, Karun Dewan, Pablo Izquierdo, Johanna Prussmann, Pooja Shrestha, César Suárez, Zheyuan Ryan Shi, Lei Li, Fei Fang<br>
+                The 38th Annual AAAI Conference on Artificial Intelligence <b>(AAAI 2024).</b><br>
+                <a href="https://arxiv.org/pdf/2402.11818.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('newsserow-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="newsserow-abstract" class="hidden">Environmental conservation organizations 
+                  routinely monitor news content on conservation in protected areas to maintain situational awareness of developments 
+                  that can have an environmental impact. Existing automated media monitoring systems require large amounts of data 
+                  labeled by domain experts, which is only feasible at scale for high-resource languages like English. However, such 
+                  tools are most needed in the global south where news of interest is mainly in local low-resource languages, and far 
+                  fewer experts are available to annotate datasets sustainably. In this paper, we propose NewsSerow, a method to 
+                  automatically recognize environmental conservation content in low-resource languages. NewsSerow is a pipeline of 
+                  summarization, in-context few-shot classification, and self-reflection using large language models (LLMs). Using at 
+                  most 10 demonstration example news articles in Nepali, NewsSerow significantly outperforms other few-shot methods 
+                  and achieves comparable performance with models fully fine-tuned using thousands of examples. The World Wide Fund 
+                  for Nature (WWF) has deployed NewsSerow for media monitoring in Nepal, significantly reducing their operational 
+                  burden, and ensuring that AI tools for conservation actually reach the communities that need them the most. NewsSerow 
+                  has also been deployed for countries with other languages like Colombia.
                 </i></p>
               </li>
             </ul>

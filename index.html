@@ -87,6 +87,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
+                <li><b>June 2024</b>: Happy to be part of the <a href="https://www.datacomp.ai/dclm/index.html"><b>DataComp-LM</b></a> effort! 
+                  Check out the <a href="https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet">DCLM-Baseline</a> dataset and our <a href="https://www.datacomp.ai/dclm/index.html">competition</a>.</li>
                 <li><b>May 2024</b>: Check out our paper <a href="https://arxiv.org/abs/2405.06640">Linearizing Large Language Models</a>.</li>
                 <li><b>May 2024</b>: Will be attending ICRA in May (Yokohama, Japan) and NAACL in June (Mexico City, Mexico).</li>
                 <li><b>Apr. 2024</b>: Check out our release of <b><a href="https://huggingface.co/TRI-ML/mamba-7b-rw">Mamba-7B</a></b>!</li>
@@ -150,9 +152,44 @@
             <h4>2024</h4>
             <ul>
               <li>
+                <a href="https://arxiv.org/abs/2406.11794">DataComp-LM: In search of the next generation of training sets for language models</a><br>
+                DCLM team<br>
+                <a href="https://arxiv.org/pdf/2406.11794.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('dclm-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="dclm-abstract" class="hidden">We introduce DataComp for Language Models (DCLM), a testbed for 
+                  controlled dataset experiments with the goal of improving language models. As part of DCLM, we provide a standardized 
+                  corpus of 240T tokens extracted from Common Crawl, effective pretraining recipes based on the OpenLM framework, and a 
+                  broad suite of 53 downstream evaluations. Participants in the DCLM benchmark can experiment with data curation strategies 
+                  such as deduplication, filtering, and data mixing at model scales ranging from 412M to 7B parameters. As a baseline for 
+                  DCLM, we conduct extensive experiments and find that model-based filtering is key to assembling a high-quality training 
+                  set. The resulting dataset, DCLM-Baseline enables training a 7B parameter language model from scratch to 64% 5-shot 
+                  accuracy on MMLU with 2.6T training tokens. Compared to MAP-Neo, the previous state-of-the-art in open-data language 
+                  models, DCLM-Baseline represents a 6.6 percentage point improvement on MMLU while being trained with 40% less compute. 
+                  Our baseline model is also comparable to Mistral-7B-v0.3 and Llama 3 8B on MMLU (63% & 66%), and performs similarly on 
+                  an average of 53 natural language understanding tasks while being trained with 6.6x less compute than Llama 3 8B. Our 
+                  results highlight the importance of dataset design for training language models and offer a starting point for further 
+                  research on data curation.</i></p>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2406.10118">SEACrowd: A Multilingual Multimodal Data Hub and Benchmark Suite for Southeast Asian Languages</a><br>
+                SEACrowd team<br>
+                <a href="https://arxiv.org/pdf/2406.10118.pdf">pdf</a> | 
+                <a href="javascript:toggleblock('seacrowd-abstract')" target="_self">abstract</a>
+                <p align="justify"> <i id="seacrowd-abstract" class="hidden">Southeast Asia (SEA) is a region rich in linguistic 
+                  diversity and cultural variety, with over 1,300 indigenous languages and a population of 671 million people. 
+                  However, prevailing AI models suffer from a significant lack of representation of texts, images, and audio datasets 
+                  from SEA, compromising the quality of AI models for SEA languages. Evaluating models for SEA languages is challenging 
+                  due to the scarcity of high-quality datasets, compounded by the dominance of English training data, raising concerns 
+                  about potential cultural misrepresentation. To address these challenges, we introduce SEACrowd, a collaborative 
+                  initiative that consolidates a comprehensive resource hub that fills the resource gap by providing standardized 
+                  corpora in nearly 1,000 SEA languages across three modalities. Through our SEACrowd benchmarks, we assess the quality 
+                  of AI models on 36 indigenous languages across 13 tasks, offering valuable insights into the current AI landscape in 
+                  SEA. Furthermore, we propose strategies to facilitate greater AI advancements, maximizing potential utility and 
+                  resource equity for the future of AI in SEA.</i></p>
+              </li>
+              <li>
                 <a href="https://arxiv.org/abs/2405.06640">Linearizing Large Language Models</a><br>
                 Jean Mercat*, Igor Vasiljevic*, <b>Sedrick Keh</b>*, Kushal Arora, Achal Dave, Adrien Gaidon, Thomas Kollar<br>
-                <!-- arXiv<br> -->
                 <a href="https://arxiv.org/pdf/2405.06640.pdf">pdf</a> | 
                 <a href="javascript:toggleblock('linear-abstract')" target="_self">abstract</a>
                 <p align="justify"> <i id="linear-abstract" class="hidden">Linear transformers have emerged as a subquadratic-time 
@@ -172,7 +209,6 @@
               <li>
                 <a href="https://arxiv.org/abs/2403.08540">Language Models Scale Reliably with Over-training and on Downstream Tasks</a><br>
                 Samir Yitzhak Gadre, Georgios Smyrnis, Vaishaal Shankar, Suchin Gururangan, Mitchell Wortsman, Rulin Shao, Jean Mercat, Alex Fang, Jeffrey Li, <b>Sedrick Keh</b>, Rui Xin, Marianna Nezhurina, Igor Vasiljevic, Jenia Jitsev, Alexandros G Dimakis, Gabriel Ilharco, Shuran Song, Thomas Kollar, Yair Carmon, Achal Dave, Reinhard Heckel, Niklas Muennighoff, Ludwig Schmidt<br>
-                <!-- arXiv<br> -->
                 <a href="https://arxiv.org/pdf/2403.08540.pdf">pdf</a> | 
                 <a href="javascript:toggleblock('overtraining-abstract')" target="_self">abstract</a>
                 <p align="justify"> <i id="overtraining-abstract" class="hidden">Scaling laws are useful guides for developing 
@@ -192,7 +228,6 @@
               <li>
                 <a href="https://arxiv.org/abs/2402.12366">A Critical Evaluation of AI Feedback for Aligning Large Language Models</a><br>
                 Archit Sharma, <b>Sedrick Keh</b>, Eric Mitchell, Chelsea Finn, Kushal Arora, Thomas Kollar<br>
-                <!-- arXiv<br> -->
                 <a href="https://arxiv.org/pdf/2402.12366.pdf">pdf</a> | 
                 <a href="javascript:toggleblock('rlaif-abstract')" target="_self">abstract</a>
                 <p align="justify"> <i id="rlaif-abstract" class="hidden">Reinforcement learning with AI feedback (RLAIF) is a popular 
